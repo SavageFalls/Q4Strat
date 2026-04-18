@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  background: radial-gradient(circle at top left, #16233a 0%, #0b1220 42%, #08101b 100%);
+  color: #dbe4f0;
+  font-family: Aptos, "Segoe UI", sans-serif;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 340px 1fr;
+}
+
+.sidebar {
+  padding: 28px 24px;
+  background: rgba(9, 15, 27, 0.94);
+  border-right: 1px solid #1e2b42;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.main-panel {
+  padding: 28px;
+}
+
+.app-title {
+  margin: 0 0 10px;
+  color: #f8fafc;
+  letter-spacing: 0.02em;
+  font-size: 30px;
+}
+
+.sidebar-copy,
+.sidebar-footnote {
+  color: #95a7c6;
+  line-height: 1.5;
+}
+
+.control-label {
+  display: block;
+  margin: 20px 0 8px;
+  color: #f8fafc;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.control,
+.date-range {
+  margin-bottom: 6px;
+}
+
+.checklist label,
+.radio-group label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.button-row {
+  display: grid;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.action-button {
+  width: 100%;
+  border: 1px solid #2f4d7a;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #17325c 0%, #0f2747 100%);
+  color: #f8fafc;
+  padding: 12px 14px;
+  cursor: pointer;
+}
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.metric-card,
+.table-card {
+  background: rgba(17, 26, 44, 0.92);
+  border: 1px solid #1f2c45;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(4, 7, 15, 0.3);
+}
+
+.metric-card {
+  padding: 16px;
+}
+
+.metric-label {
+  color: #8da4c9;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.metric-value {
+  margin-top: 8px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #f8fafc;
+}
+
+.metric-subtitle {
+  margin-top: 8px;
+  color: #7b91b4;
+  font-size: 13px;
+}
+
+.table-card {
+  padding: 18px;
+  margin-bottom: 18px;
+}
+
+.section-title {
+  margin: 0 0 14px;
+  font-size: 18px;
+  color: #f8fafc;
+}
+
+@media (max-width: 1100px) {
+  .app-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: relative;
+    height: auto;
+  }
+}
